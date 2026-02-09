@@ -1,0 +1,18 @@
+FROM registry.redhat.io/rhel9/rhel-bootc:9.4
+
+RUN subscription-manager register --activationkey=bootc-test-sub --org=18358794
+RUN subscription-manager status
+
+#install the lamp components
+RUN dnf module enable -y php:8.2 nginx:1.22 && dnf install -y httpd mariadb mariadb-server php-fpm php-mysqlnd && dnf clean all
+
+RUN dnf -y install cloud-init && \
+    ln -s ../cloud-init.target /usr/lib/systemd/system/default.target.wants && \
+    dnf clean all
+
+#start the services automatically on boot
+RUN systemctl enable httpd mariadb php-fpm
+
+#create an awe inspiring home page! 
+RUN echo '<h1 style="text-align:center;">Demonstrating in live -- bootc RHEL</h1> <?php phpinfo(); ?>' >> /usr/local/index.php
+RUN ln -s /usr/local/index.php /var/www/html/index.php
