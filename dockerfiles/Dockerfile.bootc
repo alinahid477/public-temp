@@ -1,5 +1,8 @@
 FROM registry.redhat.io/rhel9/rhel-bootc:9.4
 
+# Pre-create volatile directories that often cause cpio failures in containers
+RUN mkdir -p /run/httpd /run/mariadb /var/lib/php/opcache
+
 RUN subscription-manager register --activationkey=bootc-test-sub --org=18358794
 RUN subscription-manager status
 
