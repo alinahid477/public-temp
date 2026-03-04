@@ -15,6 +15,11 @@ spec:
       # os:
       #   image: quay.io/alitestseverything/my-rhel9-bootc:kioskv2
       config:
+        - name: "silence-audit-logs"
+          inline:
+            - path: "/etc/sysctl.d/20-quiet-printk.conf"
+              content: "kernel.printk = 3 4 1 3"
+              mode: 0644
         - name: gdm-restart-hook
           inline:
             - path: /etc/flightctl/hooks.d/afterupdating/10-restart-gdm.yaml
