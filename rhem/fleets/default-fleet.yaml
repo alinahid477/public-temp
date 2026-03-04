@@ -20,6 +20,15 @@ spec:
             - path: "/etc/sysctl.d/20-quiet-printk.conf"
               content: "kernel.printk = 3 4 1 3"
               mode: 0644
+        # STEP 1: Force the creation of the writable directory via tmpfiles
+        - name: prep-writable-storage
+          inline:
+            - path: "/etc/tmpfiles.d/kiosk.conf"
+              content: |
+                d /var/www 0755 root root -
+                d /var/www/html 0755 root root -
+                d /etc/flightctl/hooks.d/afterupdating 0755 root root -
+              mode: 0644
         - name: gdm-restart-hook
           inline:
             - path: /etc/flightctl/hooks.d/afterupdating/10-restart-gdm.yaml
