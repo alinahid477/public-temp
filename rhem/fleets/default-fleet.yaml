@@ -15,6 +15,15 @@ spec:
       # os:
       #   image: quay.io/alitestseverything/my-rhel9-bootc:kioskv2
       config:
+        - name: gdm-restart-hook
+          inline:
+            - path: /etc/flightctl/hooks.d/afterupdating/10-restart-gdm.yaml
+              content: |-
+                - run: /usr/bin/systemctl restart gdm
+                  timeout: 10s
+                  if:
+                    - path: /var/www/html
+                      op: [created, updated, deleted]
         - name: kioskapp
           gitRef:
             repository: rhem-default
