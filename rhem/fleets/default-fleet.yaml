@@ -19,7 +19,7 @@ spec:
           gitRef:
             repository: rhem-default
             targetRevision: main
-            path: /rhem/kiosk/
+            path: /rhem/var/www/html
         - name: motd-update
           inline:
             - path: "/etc/motd"
