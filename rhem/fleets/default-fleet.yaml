@@ -54,7 +54,7 @@ spec:
           gitRef:
             repository: rhem-default
             targetRevision: main
-            path: /var/lib/kiosk/html
+            path: /rhem/kiosk
       resources:
         - monitorType: CPU
           alertRules:
