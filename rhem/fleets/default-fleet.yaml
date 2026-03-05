@@ -43,7 +43,7 @@ spec:
           gitRef:
             repository: rhem-default
             targetRevision: main
-            path: /rhem/kiosk
+            path: /var/lib/kiosk/html
             mountPath: /var/lib/kiosk/html
         - name: motd-update
           inline:
