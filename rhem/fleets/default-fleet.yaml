@@ -44,6 +44,12 @@ spec:
             targetRevision: main
             path: /rhem/kiosk
             mountPath: /var/www/html
+        - name: kioskappimages
+          gitRef:
+            repository: rhem-default
+            targetRevision: main
+            path: /rhem/kiosk/images
+            mountPath: /var/www/html/images
         - name: motd-update
           inline:
             - path: "/etc/motd"
