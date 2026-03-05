@@ -44,7 +44,6 @@ spec:
             repository: rhem-default
             targetRevision: main
             path: /var/lib/kiosk/html
-            mountPath: /var/lib/kiosk/html
         - name: motd-update
           inline:
             - path: "/etc/motd"
