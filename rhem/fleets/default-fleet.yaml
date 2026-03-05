@@ -38,13 +38,13 @@ spec:
                   if:
                     - path: /var/www/html
                       op: [created, updated, deleted]
-        # - name: kioskapp
-        #   configType: GitConfigProviderSpec
-        #   gitRef:
-        #     repository: rhem-default
-        #     targetRevision: main
-        #     path: /rhem/kiosk
-        #     mountPath: /var/www/html
+        - name: kioskapp
+          configType: GitConfigProviderSpec
+          gitRef:
+            repository: rhem-default
+            targetRevision: main
+            path: /rhem/kiosk
+            mountPath: /var/lib/kiosk/html
         # - name: kioskappimages
         #   configType: GitConfigProviderSpec
         #   gitRef:
