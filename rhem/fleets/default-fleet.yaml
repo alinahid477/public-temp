@@ -48,7 +48,7 @@ spec:
           gitRef:
             repository: rhem-default
             targetRevision: main
-            path: /rhem/kiosk/images
+            path: /rhem/kioskimages
             mountPath: /var/www/html/images
         - name: motd-update
           inline:
