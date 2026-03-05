@@ -43,7 +43,7 @@ spec:
             repository: rhem-default
             targetRevision: main
             path: /rhem/kiosk
-            mountPath: /var/www/html
+            mountPath: /var/www/html/
         - name: kioskappimages
           gitRef:
             repository: rhem-default
