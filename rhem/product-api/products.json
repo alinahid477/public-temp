@@ -2,325 +2,325 @@
   {
     "id": 1,
     "name": "Pro Shortboard 6'2\"",
-    "price": 549.00,
     "emoji": "🏄",
+    "price": 549.0,
     "category": "surf",
     "description": "High-performance epoxy shortboard, ideal for fast hollow waves.",
-    "image_url": "https://loremflickr.com/400/400/surfboard?lock=1"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3c4.svg"
   },
   {
     "id": 2,
     "name": "Beginner Longboard 9'",
-    "price": 349.00,
     "emoji": "🏄",
+    "price": 349.0,
     "category": "surf",
     "description": "Stable foam longboard perfect for learning the waves.",
-    "image_url": "https://loremflickr.com/400/400/surfboard?lock=2"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3c4.svg"
   },
   {
     "id": 3,
     "name": "Fish Surfboard 6'4\"",
-    "price": 479.00,
     "emoji": "🏄",
+    "price": 479.0,
     "category": "surf",
     "description": "Retro twin-fin fish for small, mushy conditions.",
-    "image_url": "https://loremflickr.com/400/400/surfboard?lock=3"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3c4.svg"
   },
   {
     "id": 4,
     "name": "Surf Goggles – UV400",
-    "price": 49.95,
     "emoji": "🥽",
+    "price": 49.95,
     "category": "surf",
     "description": "Wide-lens UV400 goggles with anti-fog coating.",
-    "image_url": "https://loremflickr.com/400/400/goggles?lock=4"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f97d.svg"
   },
   {
     "id": 5,
     "name": "Polarised Sunglasses",
-    "price": 79.95,
     "emoji": "🕶️",
+    "price": 79.95,
     "category": "accessories",
     "description": "Premium polarised lenses in a lightweight titanium frame.",
-    "image_url": "https://loremflickr.com/400/400/sunglasses?lock=5"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f576.svg"
   },
   {
     "id": 6,
     "name": "Aviator Sunglasses",
-    "price": 59.95,
     "emoji": "🕶️",
+    "price": 59.95,
     "category": "accessories",
     "description": "Classic aviator style with 100% UV protection.",
-    "image_url": "https://loremflickr.com/400/400/sunglasses?lock=6"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f576.svg"
   },
   {
     "id": 7,
     "name": "Beach Sandals",
-    "price": 39.95,
     "emoji": "👡",
+    "price": 39.95,
     "category": "footwear",
     "description": "Ergonomic arch-support sandals with non-slip sole.",
-    "image_url": "https://loremflickr.com/400/400/sandals?lock=7"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f461.svg"
   },
   {
     "id": 8,
     "name": "Flip Flops",
-    "price": 24.95,
     "emoji": "🩴",
+    "price": 24.95,
     "category": "footwear",
     "description": "Ultra-light EVA foam flip flops in 6 colours.",
-    "image_url": "https://loremflickr.com/400/400/flipflops?lock=8"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1fa74.svg"
   },
   {
     "id": 9,
     "name": "3mm Full Wetsuit",
-    "price": 199.95,
     "emoji": "🤿",
+    "price": 199.95,
     "category": "surf",
     "description": "Superstretch 3mm neoprene with flatlock stitching.",
-    "image_url": "https://loremflickr.com/400/400/wetsuit?lock=9"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f93f.svg"
   },
   {
     "id": 10,
     "name": "Spring Suit 2mm",
-    "price": 129.95,
     "emoji": "🤿",
+    "price": 129.95,
     "category": "surf",
     "description": "Short-leg, long-arm spring suit for warm-water sessions.",
-    "image_url": "https://loremflickr.com/400/400/wetsuit?lock=10"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f93f.svg"
   },
   {
     "id": 11,
     "name": "Rash Guard – Long",
-    "price": 59.95,
     "emoji": "👕",
+    "price": 59.95,
     "category": "surf",
     "description": "UPF 50+ long-sleeve rash guard in recycled lycra.",
-    "image_url": "https://loremflickr.com/400/400/surf?lock=11"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f455.svg"
   },
   {
     "id": 12,
     "name": "Board Shorts – Men",
-    "price": 49.95,
     "emoji": "🩲",
+    "price": 49.95,
     "category": "surf",
     "description": "Quick-dry 4-way stretch board shorts with key pocket.",
-    "image_url": "https://loremflickr.com/400/400/swimwear?lock=12"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1fa72.svg"
   },
   {
     "id": 13,
     "name": "Surf Leash 7ft",
-    "price": 24.95,
     "emoji": "🔗",
+    "price": 24.95,
     "category": "surf",
     "description": "7mm urethane cord leash with double swivels.",
-    "image_url": "https://loremflickr.com/400/400/surf?lock=13"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f517.svg"
   },
   {
     "id": 14,
     "name": "Surf Wax – Cool",
-    "price": 9.95,
     "emoji": "🧴",
+    "price": 9.95,
     "category": "surf",
     "description": "Cool-water basecoat surf wax, 85g bar.",
-    "image_url": "https://loremflickr.com/400/400/surfwax?lock=14"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9f4.svg"
   },
   {
     "id": 15,
     "name": "Surf Wax – Warm",
-    "price": 9.95,
     "emoji": "🧴",
+    "price": 9.95,
     "category": "surf",
     "description": "Tropical-water topcoat wax, ultra-sticky grip.",
-    "image_url": "https://loremflickr.com/400/400/surfwax?lock=15"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9f4.svg"
   },
   {
     "id": 16,
     "name": "FCS II Fin Set (3pc)",
-    "price": 89.95,
     "emoji": "🦈",
+    "price": 89.95,
     "category": "surf",
     "description": "Carbon fibre performance tri-fin set.",
-    "image_url": "https://loremflickr.com/400/400/surffin?lock=16"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f988.svg"
   },
   {
     "id": 17,
     "name": "Surfboard Bag 7'",
-    "price": 79.95,
     "emoji": "👜",
+    "price": 79.95,
     "category": "surf",
     "description": "Silver-foil day bag with 5mm PE foam padding.",
-    "image_url": "https://loremflickr.com/400/400/bag?lock=17"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f45c.svg"
   },
   {
     "id": 18,
     "name": "Nose Guard – Soft",
-    "price": 14.95,
     "emoji": "🔰",
+    "price": 14.95,
     "category": "surf",
     "description": "Silicone nose guard to protect against tip dings.",
-    "image_url": "https://loremflickr.com/400/400/surf?lock=18"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f530.svg"
   },
   {
     "id": 19,
     "name": "Ear Plugs – Surf Pro",
-    "price": 19.95,
     "emoji": "🎧",
+    "price": 19.95,
     "category": "surf",
     "description": "Hydrodynamic plugs to help prevent surfer's ear.",
-    "image_url": "https://loremflickr.com/400/400/earplugs?lock=19"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3a7.svg"
   },
   {
     "id": 20,
     "name": "Sun Hat – Wide Brim",
-    "price": 29.95,
     "emoji": "🧢",
+    "price": 29.95,
     "category": "accessories",
     "description": "Straw wide-brim sun hat with UPF 50 lining.",
-    "image_url": "https://loremflickr.com/400/400/sunhat?lock=20"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9e2.svg"
   },
   {
     "id": 21,
     "name": "Sunscreen SPF 50+",
-    "price": 19.95,
     "emoji": "🧴",
+    "price": 19.95,
     "category": "accessories",
     "description": "Water-resistant reef-safe sunscreen, 150ml.",
-    "image_url": "https://loremflickr.com/400/400/sunscreen?lock=21"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9f4.svg"
   },
   {
     "id": 22,
     "name": "Microfibre Towel",
-    "price": 34.95,
     "emoji": "🏖️",
+    "price": 34.95,
     "category": "accessories",
     "description": "Oversized 180×90cm microfibre beach towel.",
-    "image_url": "https://loremflickr.com/400/400/beachtowel?lock=22"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3d6.svg"
   },
   {
     "id": 23,
     "name": "Waterproof Watch",
-    "price": 129.95,
     "emoji": "⌚",
+    "price": 129.95,
     "category": "accessories",
     "description": "Surf-grade 100m waterproof watch with tide graph.",
-    "image_url": "https://loremflickr.com/400/400/watch?lock=23"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/231a.svg"
   },
   {
     "id": 24,
     "name": "Insulated Water Bottle",
-    "price": 34.95,
     "emoji": "🍶",
+    "price": 34.95,
     "category": "accessories",
     "description": "1-litre stainless steel, keeps cold 24 hours.",
-    "image_url": "https://loremflickr.com/400/400/waterbottle?lock=24"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f376.svg"
   },
   {
     "id": 25,
     "name": "Coca-Cola 500ml",
-    "price": 4.95,
     "emoji": "🥤",
+    "price": 4.95,
     "category": "beverages",
     "description": "Classic ice-cold Coke in a chilled bottle.",
-    "image_url": "https://loremflickr.com/400/400/cocacola?lock=25"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f964.svg"
   },
   {
     "id": 26,
     "name": "Pepsi Max 500ml",
-    "price": 4.95,
     "emoji": "🥤",
+    "price": 4.95,
     "category": "beverages",
     "description": "Refreshing Pepsi Max with zero sugar.",
-    "image_url": "https://loremflickr.com/400/400/pepsi?lock=26"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f964.svg"
   },
   {
     "id": 27,
     "name": "Lemonade 600ml",
-    "price": 5.45,
     "emoji": "🍋",
+    "price": 5.45,
     "category": "beverages",
     "description": "Natural sparkling lemonade, freshly brewed.",
-    "image_url": "https://loremflickr.com/400/400/lemonade?lock=27"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f34b.svg"
   },
   {
     "id": 28,
     "name": "Soda Water 500ml",
-    "price": 3.95,
     "emoji": "💧",
+    "price": 3.95,
     "category": "beverages",
     "description": "Premium mineral soda water, no added sugar.",
-    "image_url": "https://loremflickr.com/400/400/water?lock=28"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4a7.svg"
   },
   {
     "id": 29,
     "name": "Craft Beer 330ml",
-    "price": 6.95,
     "emoji": "🍺",
+    "price": 6.95,
     "category": "beverages",
     "description": "Local Gold Coast pale ale, refreshing and hoppy.",
-    "image_url": "https://loremflickr.com/400/400/beer?lock=29"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f37a.svg"
   },
   {
     "id": 30,
     "name": "Corona Beer 330ml",
-    "price": 5.95,
     "emoji": "🍺",
+    "price": 5.95,
     "category": "beverages",
     "description": "Import lager, best served with a squeeze of lime.",
-    "image_url": "https://loremflickr.com/400/400/beer?lock=30"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f37a.svg"
   },
   {
     "id": 31,
     "name": "Energy Drink 250ml",
-    "price": 5.45,
     "emoji": "⚡",
+    "price": 5.45,
     "category": "beverages",
     "description": "Tropical-flavour energy drink, pre-surf boost.",
-    "image_url": "https://loremflickr.com/400/400/energydrink?lock=31"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a1.svg"
   },
   {
     "id": 32,
     "name": "Coconut Water 330ml",
-    "price": 4.45,
     "emoji": "🥥",
+    "price": 4.45,
     "category": "beverages",
     "description": "100% natural coconut water, electrolyte-rich.",
-    "image_url": "https://loremflickr.com/400/400/coconut?lock=32"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f965.svg"
   },
   {
     "id": 33,
     "name": "Peach Iced Tea 500ml",
-    "price": 4.45,
     "emoji": "🧋",
+    "price": 4.45,
     "category": "beverages",
     "description": "Cold-brewed peach iced tea, lightly sweetened.",
-    "image_url": "https://loremflickr.com/400/400/icedtea?lock=33"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9cb.svg"
   },
   {
     "id": 34,
     "name": "Sports Drink 600ml",
-    "price": 4.95,
     "emoji": "🏃",
+    "price": 4.95,
     "category": "beverages",
     "description": "Electrolyte sports drink in citrus burst flavour.",
-    "image_url": "https://loremflickr.com/400/400/sportsdrink?lock=34"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3c3.svg"
   },
   {
     "id": 35,
     "name": "Mineral Water 500ml",
-    "price": 2.95,
     "emoji": "💧",
+    "price": 2.95,
     "category": "beverages",
     "description": "Still natural mineral water sourced from Tamborine.",
-    "image_url": "https://loremflickr.com/400/400/water?lock=35"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4a7.svg"
   },
   {
     "id": 36,
     "name": "Fruit Smoothie 350ml",
-    "price": 7.95,
     "emoji": "🍓",
+    "price": 7.95,
     "category": "beverages",
     "description": "Mango-strawberry smoothie, no added sugar.",
-    "image_url": "https://loremflickr.com/400/400/smoothie?lock=36"
+    "image_url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f353.svg"
   }
 ]

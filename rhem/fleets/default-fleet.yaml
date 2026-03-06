@@ -14,6 +14,17 @@ spec:
     spec:
       # os:
       #   image: quay.io/alitestseverything/my-rhel9-bootc:kioskv2
+      applications:
+        - appType: container
+          envVars: {}
+          image: quay.io/alitestseverything/product-api:v1
+          name: product-api
+          ports:
+            - '3000:3000'
+          resources:
+            limits:
+              cpu: '1'
+          volumes: []
       config:
         - name: "silence-audit-logs"
           inline:
@@ -35,15 +46,23 @@ spec:
               content: |
                 d /etc/flightctl/hooks.d/afterupdating 0755 root root -
               mode: 0644
-        - name: gdm-restart-hook
+        - name: kiosk-refresh-hook
           inline:
-            - path: /etc/flightctl/hooks.d/afterupdating/10-restart-gdm.yaml
-              content: |-
-                - run: /usr/bin/systemctl restart gdm
-                  timeout: 10s
+            - path: /etc/flightctl/hooks.d/afterupdating/10-refresh-browser.yaml
+              content: |
+                - run: /usr/local/bin/kiosk-refresh.sh
                   if:
                     - path: /var/lib/kiosk/html
                       op: [created, updated, deleted]
+        # - name: gdm-restart-hook
+        #   inline:
+        #     - path: /etc/flightctl/hooks.d/afterupdating/11-restart-gdm.yaml
+        #       content: |-
+        #         - run: /usr/bin/systemctl restart gdm
+        #           timeout: 10s
+        #           if:
+        #             - path: /var/lib/kiosk/html
+        #               op: [created, updated, deleted]
         - name: motd-update
           inline:
             - path: "/etc/motd"

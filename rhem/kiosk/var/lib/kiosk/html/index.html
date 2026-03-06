@@ -2,18 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flight Control Kiosk US West</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surfers Paradise – Kiosk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Flight Control</h1>
-    <h2>Have fleet. Will manage.</h2>
-  </header>
-  <main>
-    <div id="product-grid" class="grid"></div>
-  </main>
-  <script src="script.js"></script>
+<div id="kiosk-app">
+
+  <!-- ════════════════════════════════════════
+       SECTION 1 : PRODUCTS (80%)
+  ════════════════════════════════════════ -->
+  <section id="section-products">
+
+    <div id="products-header">
+      <div id="shop-brand">
+        <span id="brand-icon">🏄‍♂️</span>
+        <span id="brand-name">Surfers Paradise</span>
+      </div>
+      <div id="brand-divider"></div>
+      <div id="search-wrapper">
+        <input id="search-input" type="text"
+               placeholder="Search products (type 3+ letters)…"
+               autocomplete="off" spellcheck="false" />
+        <i id="search-icon-el" class="fas fa-magnifying-glass"></i>
+        <button id="search-clear" title="Clear search">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="products-scroll">
+      <div id="products-grid">
+        <!-- injected by main.js -->
+      </div>
+    </div>
+
+    <div id="pagination-bar">
+      <!-- injected by main.js -->
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════
+       SECTION 2 : CART (20%)
+  ════════════════════════════════════════ -->
+  <aside id="section-cart">
+
+    <div id="cart-header">
+      <i id="cart-header-icon" class="fas fa-cart-shopping"></i>
+      <span id="cart-title">Your Cart</span>
+      <span id="cart-badge">0</span>
+    </div>
+
+    <div id="cart-scroll">
+      <div id="cart-items-list">
+        <!-- injected by main.js -->
+      </div>
+    </div>
+
+    <div id="cart-footer">
+      <div id="cart-totals-row">
+        <span id="cart-total-label">Total</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button id="checkout-btn">
+        <i class="fas fa-credit-card"></i>
+        Proceed to Checkout
+      </button>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PRODUCT DETAIL  (Page 2 – modal overlay)
+══════════════════════════════════════════ -->
+<div id="detail-overlay" role="dialog" aria-modal="true">
+  <div id="detail-card">
+    <button id="detail-close" title="Close">
+      <i class="fas fa-xmark"></i>
+    </button>
+    <div id="detail-emoji"></div>
+    <div id="detail-name"></div>
+    <div id="detail-desc"></div>
+    <div id="detail-price">
+      <span class="price-symbol">$</span>
+      <span id="detail-price-val"></span>
+    </div>
+    <div id="qty-row">
+      <button class="qty-btn" id="qty-minus" title="Decrease">−</button>
+      <div id="qty-val">1</div>
+      <button class="qty-btn" id="qty-plus" title="Increase">+</button>
+    </div>
+    <button id="add-to-cart-btn">
+      <i class="fas fa-cart-plus"></i>
+      Add to Cart
+    </button>
+  </div>
+</div>
+
+<!-- Toast notification -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="main.js"></script>
 </body>
 </html>
