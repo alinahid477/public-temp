@@ -21,10 +21,6 @@ spec:
           name: product-api
           ports:
             - '3000:3000'
-          resources:
-            limits:
-              cpu: '1'
-          volumes: []
       config:
         - name: "silence-audit-logs"
           inline:
