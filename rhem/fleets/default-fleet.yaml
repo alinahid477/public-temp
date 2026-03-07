@@ -12,8 +12,8 @@ spec:
       labels:
         fleet: default
     spec:
-      # os:
-      #   image: quay.io/alitestseverything/my-rhel9-bootc:kioskv2
+      os:
+        image: quay.io/{{.metadata.labels.registry}}/my-rhel9-bootc:kioskv2
       applications:
         - appType: container
           envVars: {}
