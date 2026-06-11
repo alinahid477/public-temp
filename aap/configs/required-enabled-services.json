@@ -49,28 +49,6 @@
         "purpose": "The core worker daemon that executes remote tasks sent by Red Hat Connect."
       }
   ],
-  "cloud_initialization": [
-      {
-        "name": "cloud-config",
-        "purpose": "Executes early-stage custom cloud instance configuration parameters."
-      },
-      {
-        "name": "cloud-final",
-        "purpose": "Runs final-stage initialization tasks like user scripts inside cloud VMs."
-      },
-      {
-        "name": "cloud-init",
-        "purpose": "Automates the complete provisioning and initialization of cloud servers."
-      },
-      {
-        "name": "cloud-init-hotplugd",
-        "purpose": "Responds to dynamic network or storage hotplug events during cloud boot."
-      },
-      {
-        "name": "cloud-init-local",
-        "purpose": "Searches for available cloud metadata datasources early in the boot flow."
-      }
-  ],
   "system_maintenance_logging_automation": [
       {
         "name": "chronyd",
