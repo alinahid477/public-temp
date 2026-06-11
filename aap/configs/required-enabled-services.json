@@ -1,316 +1,93 @@
 {
-    "user_services": [
+  "user_services": [
+    {
+      "name": "nginx",
+      "purpose": "High-performance HTTP server, reverse proxy, and web server infrastructure."
+    }
+  ],
+  "security_auditing_access_control": [
       {
-        "name": "nginx",
-        "purpose": "High-performance HTTP server, reverse proxy, and web server infrastructure."
+        "name": "auditd",
+        "purpose": "Linux Auditing System daemon that logs security-related events."
+      },
+      {
+        "name": "firewalld",
+        "purpose": "Provides user-friendly, dynamic host-based firewall rule management."
+      },
+      {
+        "name": "polkit",
+        "purpose": "Allows unprivileged system processes to securely execute root-level actions based on policy."
+      },
+      {
+        "name": "setroubleshootd",
+        "purpose": "Captures complex SELinux blocks and provides plain-text debugging advice."
+      },
+      {
+        "name": "sshd",
+        "purpose": "Manages safe encrypted incoming remote server connection paths (SSH)."
       }
-    ],
-    "security_auditing_access_control": [
-        {
-          "name": "audit-rules",
-          "purpose": "Loads and configures kernel auditing rules at boot time."
-        },
-        {
-          "name": "auditd",
-          "purpose": "Linux Auditing System daemon that logs security-related events."
-        },
-        {
-          "name": "fips-crypto-policy-overlay",
-          "purpose": "Implements custom configuration overlays for systemic FIPS cryptographic compliance."
-        },
-        {
-          "name": "firewalld",
-          "purpose": "Provides user-friendly, dynamic host-based firewall rule management."
-        },
-        {
-          "name": "pam_namespace",
-          "purpose": "Establishes private user file tracking systems using PAM directory overrides."
-        },
-        {
-          "name": "polkit",
-          "purpose": "Allows unprivileged system processes to securely execute root-level actions based on policy."
-        },
-        {
-          "name": "selinux-autorelabel-mark",
-          "purpose": "Flags the operating system to perform an SELinux security sweep on next boot."
-        },
-        {
-          "name": "selinux-autorelabel",
-          "purpose": "Restores security context tags across system paths according to SELinux rules."
-        },
-        {
-          "name": "setroubleshootd",
-          "purpose": "Captures complex SELinux blocks and provides plain-text debugging advice."
-        },
-        {
-          "name": "sshd",
-          "purpose": "Manages safe encrypted incoming remote server connection paths (SSH)."
-        }
-    ],
-    "enterprise_management_redhat_integration": [
-        {
-          "name": "capsule",
-          "purpose": "Manages localized application sandboxing or Red Hat Satellite proxy workflows."
-        },
-        {
-          "name": "insights-client-boot",
-          "purpose": "Starts foundational Red Hat Insights client inventory tracking during boot."
-        },
-        {
-          "name": "insights-client-results",
-          "purpose": "Compiles local system logging profiles for evaluation by Red Hat Insights."
-        },
-        {
-          "name": "insights-client",
-          "purpose": "Transmits system metadata to Red Hat for predictive security analytics."
-        },
-        {
-          "name": "insights-register",
-          "purpose": "Connects the local host system profile to Red Hat Insights tracking services."
-        },
-        {
-          "name": "insights-unregister",
-          "purpose": "Cleans up local data when removing the system from Red Hat Insights."
-        },
-        {
-          "name": "insights-unregistered",
-          "purpose": "Runs local validation parameters when the system lacks Insights enrollment."
-        },
-        {
-          "name": "rhc-canonical-facts",
-          "purpose": "Reports server inventory data profiles up to Red Hat Connect systems."
-        },
-        {
-          "name": "rhcd-stop",
-          "purpose": "Terminates active Red Hat Connect utility operations during system shutdown."
-        },
-        {
-          "name": "rhsmcertd",
-          "purpose": "Refreshes entitlement keys and local Red Hat Subscription validation profiles."
-        },
-        {
-          "name": "sssd",
-          "purpose": "Integrates local Linux system authentication with central corporate directories."
-        },
-        {
-          "name": "sssd-autofs",
-          "purpose": "Integrates user directory lookups with network directory file automounts."
-        },
-        {
-          "name": "sssd-kcm",
-          "purpose": "Implements a safe shared storage repository tracking user Kerberos ticket caches."
-        },
-        {
-          "name": "sssd-nss",
-          "purpose": "Overrides local user databases with network-based credential mappings."
-        },
-        {
-          "name": "sssd-pac",
-          "purpose": "Evaluates specific Active Directory security tokens for access verification."
-        },
-        {
-          "name": "sssd-pam",
-          "purpose": "Bridges authentication validation calls into external LDAP or Active Directory systems."
-        },
-        {
-          "name": "sssd-ssh",
-          "purpose": "Serves verified user public keys directly from enterprise network directories."
-        },
-        {
-          "name": "sssd-sudo",
-          "purpose": "References central enterprise servers to fetch and enforce user sudo rules."
-        },
-        {
-          "name": "yggdrasil-bus",
-          "purpose": "Manages internal communication channels for Red Hat Connect system agents."
-        },
-        {
-          "name": "yggdrasil",
-          "purpose": "The core worker daemon that executes remote tasks sent by Red Hat Connect."
-        }
-    ],
-    "cloud_initialization": [
-        {
-          "name": "cloud-config",
-          "purpose": "Executes early-stage custom cloud instance configuration parameters."
-        },
-        {
-          "name": "cloud-final",
-          "purpose": "Runs final-stage initialization tasks like user scripts inside cloud VMs."
-        },
-        {
-          "name": "cloud-init",
-          "purpose": "Automates the complete provisioning and initialization of cloud servers."
-        },
-        {
-          "name": "cloud-init-hotplugd",
-          "purpose": "Responds to dynamic network or storage hotplug events during cloud boot."
-        },
-        {
-          "name": "cloud-init-local",
-          "purpose": "Searches for available cloud metadata datasources early in the boot flow."
-        }
-    ],
-    "network_management": [
-        {
-          "name": "NetworkManager",
-          "purpose": "The core utility governing system network configurations and hardware connections."
-        },
-        {
-          "name": "NetworkManager-dispatcher",
-          "purpose": "Executes custom integration scripts when network interface connection states shift."
-        },
-        {
-          "name": "NetworkManager-wait-online",
-          "purpose": "Blocks downstream boot operations until a reliable network connection is established."
-        },
-        {
-          "name": "nm-cloud-setup",
-          "purpose": "Automatically applies custom vendor network adjustments on cloud-hosted systems."
-        },
-        {
-          "name": "nm-priv-helper",
-          "purpose": "Provides high-privilege system tasks on behalf of NetworkManager actions."
-        }
-    ],
-    "storage_disk_volume_management": [
-        {
-          "name": "dm-event",
-          "purpose": "Monitors Device Mapper frameworks (like LVM and RAID) for storage events."
-        },
-        {
-          "name": "fstrim",
-          "purpose": "Discards unused blocks on solid-state drives (SSDs) to sustain performance."
-        },
-        {
-          "name": "iscsi",
-          "purpose": "Manages network-attached block storage devices through iSCSI connections."
-        },
-        {
-          "name": "iscsi-onboot",
-          "purpose": "Mounts networked iSCSI targets automatically when the host initiates."
-        },
-        {
-          "name": "iscsi-shutdown",
-          "purpose": "Safely severs networked iSCSI block devices during system shutdowns."
-        },
-        {
-          "name": "iscsi-starter",
-          "purpose": "Automatically activates required iSCSI helper utilities when configurations require them."
-        },
-        {
-          "name": "lvm2-lvmpolld",
-          "purpose": "Tracks long-running background tasks involving Logical Volume Management (LVM)."
-        },
-        {
-          "name": "lvm2-monitor",
-          "purpose": "Actively watches LVM structures for volume faults or snapshot status changes."
-        },
-        {
-          "name": "mdadm-grow-continue",
-          "purpose": "Restarts interrupted software RAID volume resizing operations."
-        },
-        {
-          "name": "mdadm-last-resort",
-          "purpose": "Attempts to force-mount damaged software RAID spaces to protect vulnerable data."
-        },
-        {
-          "name": "mdcheck_continue",
-          "purpose": "Resumes a previously paused software RAID data integrity check."
-        },
-        {
-          "name": "mdcheck_start",
-          "purpose": "Launches a scheduled health check across software RAID arrays."
-        },
-        {
-          "name": "mdmon",
-          "purpose": "Monitors software RAID structures that depend on external system metadata formats."
-        },
-        {
-          "name": "mdmonitor",
-          "purpose": "Runs persistent background checks to alert administrators of software RAID volume failures."
-        },
-        {
-          "name": "mdmonitor-oneshot",
-          "purpose": "Performs a single quick health scan across active software RAID modules."
-        },
-        {
-          "name": "multipathd",
-          "purpose": "Controls multiple physical storage link tracks to protect against interface errors."
-        },
-        {
-          "name": "quotaon",
-          "purpose": "Enforces configured maximum storage limits for system users and groups."
-        },
-        {
-          "name": "quotaon-root",
-          "purpose": "Toggles file storage constraint enforcements specifically across the root partition."
-        },
-        {
-          "name": "raid-check",
-          "purpose": "Runs routine verification sweeps over software RAID setups to prevent data rot."
-        },
-        {
-          "name": "udisks2",
-          "purpose": "Exposes operational API boundaries to partition and manage attached storage blocks."
-        }
-    ],
-    "system_maintenance_logging_automation": [
-        {
-          "name": "chronyd",
-          "purpose": "Synchronizes the system clock with NTP time servers."
-        },
-        {
-          "name": "crond",
-          "purpose": "Schedules and automatically runs background time-based automation scripts."
-        },
-        {
-          "name": "dnf-makecache",
-          "purpose": "Regularly updates package repository metadata caches in the background."
-        },
-        {
-          "name": "dnf-system-upgrade-cleanup",
-          "purpose": "Purges residual setup caches after a major system version upgrade."
-        },
-        {
-          "name": "fwupd",
-          "purpose": "System daemon enabling local system and component firmware modifications."
-        },
-        {
-          "name": "fwupd-offline-update",
-          "purpose": "Installs scheduled hardware and component firmware updates during a system reboot."
-        },
-        {
-          "name": "fwupd-refresh",
-          "purpose": "Checks remote channels for newly available hardware firmware updates."
-        },
-        {
-          "name": "logrotate",
-          "purpose": "Automatically rotates, compresses, and cleans up growing system log files."
-        },
-        {
-          "name": "man-db-cache-update",
-          "purpose": "Rebuilds index references for system software manuals (man pages)."
-        },
-        {
-          "name": "packagekit",
-          "purpose": "Offers a unified management framework for software package tools."
-        },
-        {
-          "name": "packagekit-offline-update",
-          "purpose": "Applies system updates safely within an offline system boot wrapper."
-        },
-        {
-          "name": "rsyslog",
-          "purpose": "Gathers, modifies, and pipes systemic system logging events across servers."
-        },
-        {
-          "name": "system-update-cleanup",
-          "purpose": "Cleans up leftover installer cache modules when system updates conclude."
-        },
-        {
-          "name": "tuned",
-          "purpose": "Optimizes system resource parameters dynamically via selected performance profiles."
-        }
-    ]
+  ],
+  "enterprise_management_redhat_integration": [
+      {
+        "name": "capsule",
+        "purpose": "Manages localized application sandboxing or Red Hat Satellite proxy workflows."
+      },
+      {
+        "name": "rhcd-stop",
+        "purpose": "Terminates active Red Hat Connect utility operations during system shutdown."
+      },
+      {
+        "name": "rhsmcertd",
+        "purpose": "Refreshes entitlement keys and local Red Hat Subscription validation profiles."
+      },
+      {
+        "name": "yggdrasil-bus",
+        "purpose": "Manages internal communication channels for Red Hat Connect system agents."
+      },
+      {
+        "name": "yggdrasil",
+        "purpose": "The core worker daemon that executes remote tasks sent by Red Hat Connect."
+      }
+  ],
+  "cloud_initialization": [
+      {
+        "name": "cloud-config",
+        "purpose": "Executes early-stage custom cloud instance configuration parameters."
+      },
+      {
+        "name": "cloud-final",
+        "purpose": "Runs final-stage initialization tasks like user scripts inside cloud VMs."
+      },
+      {
+        "name": "cloud-init",
+        "purpose": "Automates the complete provisioning and initialization of cloud servers."
+      },
+      {
+        "name": "cloud-init-hotplugd",
+        "purpose": "Responds to dynamic network or storage hotplug events during cloud boot."
+      },
+      {
+        "name": "cloud-init-local",
+        "purpose": "Searches for available cloud metadata datasources early in the boot flow."
+      }
+  ],
+  "system_maintenance_logging_automation": [
+      {
+        "name": "chronyd",
+        "purpose": "Synchronizes the system clock with NTP time servers."
+      },
+      {
+        "name": "crond",
+        "purpose": "Schedules and automatically runs background time-based automation scripts."
+      },
+
+      {
+        "name": "rsyslog",
+        "purpose": "Gathers, modifies, and pipes systemic system logging events across servers."
+      },
+      {
+        "name": "tuned",
+        "purpose": "Optimizes system resource parameters dynamically via selected performance profiles."
+      }
+  ]
 }
