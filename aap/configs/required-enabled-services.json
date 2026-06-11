@@ -33,12 +33,12 @@
         "purpose": "Manages localized application sandboxing or Red Hat Satellite proxy workflows."
       },
       {
-        "name": "rhcd-stop",
-        "purpose": "Terminates active Red Hat Connect utility operations during system shutdown."
-      },
-      {
         "name": "rhsmcertd",
         "purpose": "Refreshes entitlement keys and local Red Hat Subscription validation profiles."
+      },
+      {
+        "name": "rhcd",
+        "purpose": "Remote Host Configuration Daemon."
       },
       {
         "name": "yggdrasil-bus",
